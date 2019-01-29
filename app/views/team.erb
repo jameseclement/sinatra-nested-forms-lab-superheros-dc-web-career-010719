@@ -1,3 +1,16 @@
-
-
-
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Team</title>
+  </head>
+  <body>
+    <h1>Team Name: <%= @teamname %></h1>
+    <h2>Team Motto: <%= @motto %></h2>
+<% @heros.each.with_index do |hero, index|%>
+    <h2>Hero Name: <%= @hero_names[index]%></h2>
+    <p>Hero Power: <%= @hero_powers[index]%> </p>
+    <p>Hero Biography: <%= @hero_bios[index]%> </p>
+<% end %>
+  </body>
+</html>
